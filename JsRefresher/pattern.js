@@ -350,3 +350,73 @@ function hourglass(n) {
   return string
 }
 console.log(hourglass(5));
+
+
+/*
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+ */
+
+function rightPascal(n){
+    let string = "";
+    for(let i=1;i<=n;i++){
+        for(let j=1;j<=i;j++){
+            string+="*";
+        }
+        string+="\n";
+    }
+//lower 
+    for(let i=n-1;i>=1;i--){
+        for(let j =1;j<=i;j++){
+            string+="*";
+        }
+        string+="\n";
+    }
+    return string;
+}
+console.log(rightPascal(5));
+
+/* 
+    *
+   **
+  ***
+ ****
+*****
+ ****
+  ***
+   **
+    * */
+
+function leftPascal(n){
+    let string="";
+    for(let i=1;i<=n;i++){
+        for(let j=1;j<=n-i;j++){
+             string += ' ';
+        }
+
+        for(let k=1;k<=i;k++){
+             string += '*';
+        }
+          string += '\n';
+    }
+    for(let i=n-1;i>=1;i--){
+        for(let j=1;j<=n-i;j++){
+             string += ' ';
+        }
+
+        for(let k=1;k<=i;k++){
+             string += '*';
+        }
+          string += '\n';
+    }
+    return string
+}
+console.log(leftPascal(5));
+
