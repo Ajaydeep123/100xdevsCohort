@@ -231,3 +231,83 @@ function hlwPyramid(n){
 }
 
 console.log(hlwPyramid(6));
+
+
+function diamond(n){
+    let string ="";
+    //upperHalf
+    for(let i =1;i<=n;i++){
+        for(let j=1;j<=n-i;j++){
+            string+=" ";
+        }
+        for(let k=1;k<=2*i-1;k++){
+            string+="*";
+        }
+        string+="\n";
+    }
+    // lowerHalf
+    for(let i=n-1;i>=1;i--){
+        for(let j=1;j<=n-i;j++){
+            string+=" ";
+        }
+        for(let k=1;k<=2*i-1;k++){
+            string+="*";
+        }
+        string+="\n";
+    }
+
+    return string;
+}
+console.log(diamond(5));
+
+/*
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+*/
+
+function hollowDiamond(n){
+
+    let string = "";
+    //Upper Part
+    for(let i=1;i<=n;i++){
+        for(let j=1;j<=n-i;j++){
+            string+=" ";
+        }
+        string+="*";
+
+        if(i>1){
+            for(let k =1;k<=2*i-3;k++){
+                string+=" ";
+            }
+            string+="*";
+        }
+        string+="\n";
+    }
+    //lowerPart
+
+    for(let i=n-1;i>=1;i--){
+        for(let j=1;j<=n-i;j++){
+            string += ' ';
+        }
+        string += '*';
+
+        if (i > 1) {
+          for (let k = 1; k <= 2 * i - 3; k++) {
+            string += ' ';
+          }
+          string += '*';
+        }
+        string += '\n';
+    }
+
+    return string;
+
+}
+console.log(hollowDiamond(5));
