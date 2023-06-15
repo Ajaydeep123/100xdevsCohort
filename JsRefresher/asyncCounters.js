@@ -21,6 +21,7 @@ function setTimeoutwalaCounter() {
     console.clear();
     console.log(count);
   }
+  //user recursion here
   let timer = setTimeout(function mytimer() {
     increment();
     timer = setTimeout(mytimer, 1000);
