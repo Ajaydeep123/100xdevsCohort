@@ -54,7 +54,7 @@ const authenticateJwt = (req, res, next) => {
   }
 };
 
-mongoose.connect('mongodb+srv://asrajay968:EDa684Vm9B1mjfLL@cluster0.7poatss.mongodb.net/', { 
+mongoose.connect('mongodb+srv://asrajay968:<YOUR PASSWORD>@cluster0.7poatss.mongodb.net/', { 
   useNewUrlParser: true,
   useUnifiedTopology: true,
   dbName: "courses" 

@@ -1,13 +1,7 @@
 ## Create a course selling website
 
 ### Description
-Functionally the same as 03-course-app-medium. Routes are the same as well.
-<<<<<<< HEAD
-But now you need to store data in files vs in memory.
-=======
->>>>>>> 7914b2ead7e0dde9a1280e2e30bc2ad18ad29187
 Rather than storing data in files, store them in MongoDB. 
-We will be covering this in the extra class next week but would be good for you to run ahead.
 
 ## Routes
 ### Admin Routes:
