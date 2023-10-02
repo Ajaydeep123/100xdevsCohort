@@ -1,0 +1,15 @@
+{
+  "name": "client2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "zeus": "npx graphql-zeus http://localhost:4000/graphql ./client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-zeus": "^5.3.1"
+  }
+}
