@@ -1,6 +1,7 @@
 
 docker-compose up
 npx hasura-cli console
-psql -h localhost -p 4446  -U user -d reef_dev
-
+psql -h localhost -p 4446  -U user -d reef_dev  
+- To connect hasura with postgres server 
+![Alt text](image.png)
 You wil notice there is a race between pg and hasura
