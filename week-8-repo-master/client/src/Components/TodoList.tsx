@@ -30,7 +30,8 @@ function useTodos(){
 
     return {
         loading,
-        todos:todos
+        todos:todos,
+        setTodos
     }
 
 }
