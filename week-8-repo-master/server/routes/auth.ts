@@ -2,11 +2,38 @@ import jwt from "jsonwebtoken";
 import express from 'express';
 import { authenticateJwt, SECRET } from "../middleware/";
 import { User } from "../db";
-import { signupInput } from "@100xdevs/common"
+// import { signupInput } from "@100xdevs/common";
+import {z} from "Zod";
+
+const signupInput = z.object({
+  username: z.string().min(2).max(10),
+  password: z.string().min(6).max(20)
+})
 
 const router = express.Router();
 
+
+
 router.post('/signup', async (req, res) => {
+  /* 
+  const {username, password} = req.body;
+//dumb way
+  if(typeof username !== "string"){
+    res.status(411).json({
+      msg: "you sent wrong Input, username should be string"
+    })
+    return;
+  }
+
+    if(typeof password !== "string"){
+    res.status(411).json({
+      msg: "you sent wrong Input, password should be string"
+    })
+    return;
+  }
+  
+  */
+
     let parsedInput = signupInput.safeParse(req.body)
     if (!parsedInput.success) {
       return res.status(403).json({

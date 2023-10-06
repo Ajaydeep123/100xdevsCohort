@@ -11,10 +11,38 @@ interface Todo {
 
 type TodoArray = Todo[];
 
+/* 
+function useTodos(){
+    const [todos, setTodos] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const getTodos = async () => {
+            const response = await fetch('http://localhost:3000/todo/todos', {
+                headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
+            });
+            // Todo: Create a type for the response that you get back from the server
+            const data: Todo[] = await response.json();
+            setTodos(data);
+        };
+        getTodos();
+    }, []);
+
+    return {
+        loading,
+        todos:todos
+    }
+
+}
+
+*/
+
+
 const TodoList = () => {
     const [todos, setTodos] = useState<TodoArray>([]);
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+    // const {loading, todos} = useTodos(); //custom hook
     const authStateValue = useRecoilValue(authState);
 
     useEffect(() => {
