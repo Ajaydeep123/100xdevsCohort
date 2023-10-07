@@ -7,10 +7,10 @@
   resolved "https://registry.npmjs.org/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz"
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
-"@ajaydeep968/common@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/@ajaydeep968/common/-/common-1.0.1.tgz"
-  integrity sha512-A1bURyTVtAK9ZoUk437QmL8hJkEfpE9p76tii7TPYSwmGGydJbhAMgt6uCp1OrC7LnCIbeVMCVHpA70orvbpsA==
+"@ajaydeep968/common@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@ajaydeep968/common/-/common-1.0.2.tgz"
+  integrity sha512-Us5MVh/UqSkd3YakrIoLgdb5o5qX1E+6gawqpIc5i2XUmHp2WAtOAsL5nlzSuSlQ6s0s3nCXeCC4nKI3J/drGw==
   dependencies:
     zod "^3.22.4"
 
